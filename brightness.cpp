@@ -12,7 +12,7 @@ int main(void)
 
     if(img1.empty()) {
         cout << "Image load failed" <<endl;
-        return 0;
+        return 1;
     }
 
     Mat img2 = img1.clone();
