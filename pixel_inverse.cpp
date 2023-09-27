@@ -10,11 +10,11 @@ int main(void)
 
     if(img1.empty()) {  // 이미지 로딩 체크
         cout << "Image load failed" <<endl;
-        return 0;
+        return 1;
     }
     else if(img1.type() != CV_8UC3) {   // 이미지 타입 체크
         cout << "Image load type failed" <<endl;
-        return 0;
+        return 1;
     }
     
     Mat img2 = img1.clone();
